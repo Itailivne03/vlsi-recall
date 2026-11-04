@@ -1,7 +1,7 @@
 /* Formula-sheet path: the 63 questions grouped and ordered like the course formula sheet. */
 window.SHEET_PATH = [
   {
-    key: 'A', title: 'I–V characteristics and MOS structure',
+    key: 'A', pdfPage: 1, title: 'I–V characteristics and MOS structure',
     formulas: [
       '\\[I_D^{\\,triode}=\\mu_nC_{ox}\\tfrac{W}{L}\\Big[(V_{GS}-V_{TH})V_{DS}-\\tfrac12V_{DS}^2\\Big]\\]',
       '\\[I_D^{\\,sat}=\\tfrac12\\mu_nC_{ox}\\tfrac{W}{L}(V_{GS}-V_{TH})^2(1+\\lambda V_{DS})\\qquad V_{D,sat}=V_{OV}\\]',
@@ -16,7 +16,7 @@ window.SHEET_PATH = [
     ids: [1, 2, 27, 28, 6, 11, 12, 39]
   },
   {
-    key: 'A.2', title: 'Small-signal parameters and identities',
+    key: 'A.2', pdfPage: 1, title: 'Small-signal parameters and identities',
     formulas: [
       '\\[g_m=\\mu_nC_{ox}\\tfrac{W}{L}V_{OV}=\\frac{2I_D}{V_{OV}}=\\sqrt{2\\mu_nC_{ox}\\tfrac{W}{L}I_D}\\]',
       '\\[r_o=\\frac{1}{\\lambda I_D}=\\frac{V_A}{I_D}\\qquad g_{mb}=\\eta g_m,\\ \\ \\eta=\\frac{\\gamma}{2\\sqrt{2\\Phi_F+V_{SB}}}\\]',
@@ -31,7 +31,7 @@ window.SHEET_PATH = [
     ids: [3, 26, 16, 23, 14, 53, 37]
   },
   {
-    key: 'B', title: 'CS, CD and CG stages',
+    key: 'B', pdfPage: 2, title: 'CS, CD and CG stages',
     formulas: [
       '\\[\\text{CS: }A_v=-g_m(R_D\\parallel r_o)\\qquad R_{out}=R_D\\parallel r_o\\]',
       '\\[\\text{CD: }A_v=\\frac{g_mR}{1+(g_m+g_{mb})R},\\ R=R_S\\parallel r_o\\qquad R_{out}=\\tfrac{1}{g_m}\\parallel\\tfrac{1}{g_{mb}}\\parallel r_o\\parallel R_S\\]',
@@ -46,7 +46,7 @@ window.SHEET_PATH = [
     ids: [4, 5, 17, 55, 18, 24, 25, 54, 57]
   },
   {
-    key: 'C', title: 'Miller’s theorem and Thévenin',
+    key: 'C', pdfPage: 3, title: 'Miller’s theorem and Thévenin',
     formulas: [
       '\\[Z_1=\\frac{Z}{1-A_v}\\qquad Z_2=\\frac{Z}{1-1/A_v}\\]',
       '\\[C_{in}=C_{GS}+(1+A)C_{GD}\\qquad f_p=\\frac{1}{2\\pi R_{sig}C_{in}}\\]'
@@ -58,7 +58,7 @@ window.SHEET_PATH = [
     ids: [19, 20, 21, 22]
   },
   {
-    key: 'D', title: 'Silicon numbers and the pn junction',
+    key: 'D', pdfPage: 3, title: 'Silicon numbers and the pn junction',
     formulas: [
       '\\[n_i=5.2\\times10^{15}\\,T^{3/2}e^{-E_g/2kT}\\qquad np=n_i^2\\]'
     ],
@@ -70,7 +70,7 @@ window.SHEET_PATH = [
     ids: [9, 10, 31, 32]
   },
   {
-    key: 'VT', title: 'Threshold, body effect, short channel and temperature',
+    key: 'VT', pdfPage: 4, title: 'Threshold, body effect, short channel and temperature',
     formulas: [
       '\\[V_{TH}=\\Phi_{MS}+2\\Phi_F+\\frac{Q_{dep}}{C_{ox}}-\\frac{Q_{ox}}{C_{ox}}\\qquad \\Phi_F=\\frac{kT}{q}\\ln\\frac{N_{sub}}{n_i}\\]',
       '\\[V_{TH}=V_{TH0}+\\gamma\\left(\\sqrt{2\\Phi_F+V_{SB}}-\\sqrt{2\\Phi_F}\\right)\\]',
@@ -85,7 +85,7 @@ window.SHEET_PATH = [
     ids: [33, 34, 35, 36, 42, 56, 13, 59, 58]
   },
   {
-    key: 'E', title: 'Gate capacitances',
+    key: 'E', pdfPage: 5, title: 'Gate capacitances',
     formulas: [
       '\\[\\text{Triode: }C_{GS}=C_{GD}=\\tfrac12WLC_{ox}+WC_{ov}\\]',
       '\\[\\text{Saturation: }C_{GS}=\\tfrac23WLC_{ox}+WC_{ov},\\quad C_{GD}=WC_{ov}\\]'
@@ -98,7 +98,7 @@ window.SHEET_PATH = [
     ids: [38, 40, 41, 43, 44, 45]
   },
   {
-    key: 'F', title: 'Performance measures',
+    key: 'F', pdfPage: 5, title: 'Performance measures',
     formulas: [
       '\\[\\omega_T=\\frac{g_m}{C_{gg}}\\approx\\frac32\\cdot\\frac{\\mu V_{OV}}{L^2}\\qquad A_0=g_mr_o\\]',
       '\\[\\text{given: }\\ \\omega_{max}=\\tfrac12\\sqrt{\\frac{\\omega_T}{r_gC_{gd}}},\\ \\ f_{max}=f\\sqrt{G_p}\\qquad SS=nU_T\\ln10,\\ \\ n\\ge1\\]',
@@ -113,7 +113,7 @@ window.SHEET_PATH = [
     ids: [46, 47, 48, 15, 49, 52, 63, 50, 62, 60, 51, 61]
   },
   {
-    key: 'G', title: 'SPICE',
+    key: 'G', pdfPage: 7, title: 'SPICE',
     formulas: [],
     points: [
       '.op: capacitors open, inductors short, Newton–Raphson; it seeds every other analysis.',
