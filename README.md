@@ -10,6 +10,7 @@ Open `index.html` in a modern browser. Keep the complete folder together: the sc
 
 - **Learn:** answer before revealing the solution, read the explanation, and rate how well you recalled it. Missed questions return for further practice.
 - **Question bank:** browse the full set and focus on a lecture, difficulty or topic.
+- **Formula-sheet path:** go through all 63 questions grouped and ordered by the sections of the course formula sheet (I–V, small-signal, amplifier stages, Miller, silicon, threshold and body effect, capacitances, performance measures, SPICE). Each section shows its key formulas first; study one section, the whole path, or continue from any section onward. Defined in `path.js`.
 - **Mock exam:** measure your current performance. Exam answers do not change the spaced-repetition schedule. After an exam, use the missed-question review action to practice weak areas.
 - **Your progress:** inspect coverage and retention estimates across the bank.
 - **Settings & data:** change the retention target, export or import a backup, or reset learning history to start again.
