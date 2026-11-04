@@ -110,7 +110,7 @@
     if (value == null) return null;
     object(value, 'learning session');
     const queue = idList(value.queue, ids);
-    if (!['smart', 'all', 'weak', 'bookmarked', 'custom', 'path'].includes(value.kind)) throw Error('Invalid session mode.');
+    if (!['smart', 'all', 'weak', 'bookmarked', 'custom', 'path', 'ordered'].includes(value.kind)) throw Error('Invalid session mode.');
     const result = { queue, index: count(value.index, 'session position', queue.length),
       done: count(value.done, 'session answer count', LIMIT), correct: count(value.correct, 'session score', LIMIT),
       startedAt: iso(value.startedAt, 'session start'), kind: value.kind,
